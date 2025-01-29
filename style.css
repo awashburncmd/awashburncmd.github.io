@@ -1,8 +1,8 @@
 
 :root {
     --main-bg-color: #ff95d5cc;
-    --top-nav-color: #cacacaf4;
-    --button-color:#832b7a;
+    --top-nav-color: #b11c9bf4;
+    --button-color:#d658c9;
 }
 
 
@@ -74,6 +74,7 @@ height:100%;
     border:2px solid black;
     
 }
+
 .main-content {
     position:relative;
     text-align:center;
@@ -190,7 +191,12 @@ h1 {
     flex-direction:column;
     margin:0 auto;
     width:50%;
-    background-color:grey;
+    color:black;
+   
+    
+}
+.media-links {
+    color:black;
     
 }
 
@@ -272,12 +278,15 @@ margin-top:2rem;
     width:30%;
     max-height:400px;
     margin:0 auto;
-    margin-top:2rem;
+   
     object-fit:cover;
 }
 .about-body {
     max-height:fit-content;
 
+}
+.lesson-body {
+    max-height:fit-content;
 }
 
 .schedule-2 {
@@ -290,13 +299,15 @@ margin-top:2rem;
 }
 
 .price {
-    width: 50%;
+    width: 75%;
     height:auto;
     object-fit: cover;
     display:flex;
     margin:0 auto;
 }
-
+.lesson-body {
+    height:800vh;
+}
 .quote blockquote {
     font-size:1.5rem;
     margin:0;
@@ -336,6 +347,7 @@ margin-top:2rem;
     height:10vh;
     min-height:100px;
     justify-content:space-between;
+    font-weight:bold;
 
 }
 .footer-right {

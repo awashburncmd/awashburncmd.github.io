@@ -1,12 +1,14 @@
 
 :root {
-    --main-bg-color: rgba(255, 149, 213, 80%);
-    --top-nav-color: rgba(202, 202, 202, 0.956);
-    --button-color:rgb(131, 43, 122);
+    --main-bg-color: #ff95d5cc;
+    --top-nav-color: #cacacaf4;
+    --button-color:#832b7a;
 }
 
 
-
+p, h1, h2, h3, h4, h5, h6 {
+    font-family:'Courier New', Courier, monospace;
+}   
 
 button {
     background-color:var(--button-color);
@@ -61,10 +63,11 @@ height:100%;
 }
 .main-image {
     width: 100%;
-    height:85vh;
+    height:95vh;
     max-height:650px;
     min-height:400px;
     object-fit: cover;
+    overflow:hidden;
     display: flex;
     margin:0 auto;
     padding:0;
@@ -89,9 +92,9 @@ height:100%;
 body {
     
     background-color: var(--main-bg-color);
-    height: 345vh;
+    height: 245vh;
     width: 100%;
-    max-height:2200px;
+    max-height:2000px;
     padding-top:10vh;
     padding-bottom:12vh;
     margin:0;
@@ -103,16 +106,33 @@ h1 {
     font-size: 2em;
 }
 
-
+.cont {
+    display:flex;
+    justify-content:center;
+}
+.cont2 {
+    display:flex;
+    justify-content:center;
+    font-size:1.1em;
+}
+.media {
+    display:flex;
+    justify-content:center;
+    width:100%;
+    font-size:.7em;
+}
 @media (max-width:800px) {
     .logo {
         width:10vw;
     }
-
+    body {
+        max-height:345vh;
+    }
     .button-container {
         gap:1rem;
         flex-direction:column;
         width:100%;
+        margin-bottom:1rem;
         
 
     }
@@ -162,9 +182,18 @@ h1 {
     font-weight:bold;
     cursor:pointer;
     transition:background-color .3s ease;
-    
+    text-decoration:none;
     
 }
+.links {
+    display:flex;
+    flex-direction:column;
+    margin:0 auto;
+    width:50%;
+    background-color:grey;
+    
+}
+
 
 .quote {
     text-align:right;
@@ -183,6 +212,13 @@ h1 {
     gap:1rem;
     
 }
+.contacter {
+    font-size:1.5rem;
+    margin:0;
+    line-height:1.5;
+    width:100%;
+    gap:1rem;
+}
 .focus-text {
     display:flex;
     align-items:flex-start;
@@ -196,14 +232,54 @@ h1 {
 
 .focus-img {
 width:60%;
-max-height:300px;
+max-height:350px;
 object-fit: cover;
 display:flex;
 margin:0 auto;
 margin-top:2rem;
 
+}
+.focus-img2 {
+    width:60%;
+    max-height:400px;
+    object-fit: cover;
+    display:flex;
+    margin:0 auto;
+    margin-top:2rem;
+    }
+
+.about-us-p {
+    margin:0 auto;
+    margin-top:2rem;
+
+
+}
+.about-us-img-container {
+    display:flex;
+    justify-content:space-evenly;
+    padding-top:10rem;
     
 }
+.coach-names {
+    display:flex;
+    justify-content:space-evenly;
+    margin:0 0 2rem 0;
+}
+.about-us-title {
+    margin:2rem 0 0 1rem;
+}
+.about-us-img {
+    width:30%;
+    max-height:400px;
+    margin:0 auto;
+    margin-top:2rem;
+    object-fit:cover;
+}
+.about-body {
+    max-height:fit-content;
+
+}
+
 .schedule-2 {
     display:block;
     margin:0 auto;
@@ -211,6 +287,14 @@ margin-top:2rem;
     width:30vh;
     height:auto;
     
+}
+
+.price {
+    width: 50%;
+    height:auto;
+    object-fit: cover;
+    display:flex;
+    margin:0 auto;
 }
 
 .quote blockquote {
